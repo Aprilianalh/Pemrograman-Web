@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("div").dblclick(function(){
+	$(this).css({background:"red"});
+	});
+		});
+	</script>
+<style type="text/css">
+	div {
+	background:yellow;
+	width: 60px;
+	height: 60px;
+	float:left;
+	margin: 10px;
+	cursor: pointer;
+
+}
+
+</style>
+	<title>Latihan double klik</title>
+</head>
+<body>
+	<p>klik 2x pada setiap kotak untuk mengubah warnanya</p>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

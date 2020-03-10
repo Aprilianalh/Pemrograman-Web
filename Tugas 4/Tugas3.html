@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script>
+   $(document).ready(function() {
+
+   	$("#tombol1").click(function() {
+       $("#box").fadeIn("fast");
+     })
+
+   	$("#tombol2").click(function() {
+       $("#box").fadeTo("fast", 0.5);
+     })
+
+    $("#tombol3").click(function() {
+       $("#box").fadeOut("slow");
+     })
+
+  
+   });
+   </script>
+   <style>
+   #box {
+     width: 100px;
+     height: 100px;
+     background-color: blue;
+   }
+   </style>
+</head>
+<body>
+    <button id="tombol1"> Fade In </button>
+    <button id="tombol2"> Fade To </button>
+    <button id="tombol3"> Fade Out </button>
+<br><br>
+    <div id="box"></div>
+</body>
+</html>
