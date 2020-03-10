@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Konverensi Angka Menjadi Huruf </title>
+</head>
+	<script language="Javascript">
+		function test() {
+			var val1=document.kirim.nilai.value
+			if (val1>=81 && vall<=100)
+				document.kirim.konversi.value="A"
+			else if (val1>=71 && val1<=80)
+				document.kirim.konversi.value="AB"
+			else if (val1>=66 && val1<=70)
+				document.kirim.konversi.value="B"
+			else if (val1>=61 && val1<=65)
+				document.kirim.konversi.value="BC"
+			else if (val1>=56 && val1<=60)
+				document.kirim.konversi.value="C"
+			else if (val1>=41 && val1<=55)
+				document.kirim.konversi.value="D"
+			else if (val1>=0 && val1<=40)
+				document.kirim.konversi.value="E"
+		}
+	</script>
+<body>
+	<form method="POST" name="kirim">
+		<table width="300" height="160 border="1" align="center" bordercolor="black" bgcolor="white">
+			<br>
+			<tr>
+				<center> Program Konversi Nilai Javascript </center>
+			</tr>
+			<br>
+			<tr>
+				<td> Masukkan Nilai </td>
+				<td> <input type="text" name="nilai" size="20"> </td>
+			</tr>
+			<tr>
+				<td> Konversi Nilai </td>
+				<td> <input type="text" name="konversi" size="20"> </td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td>
+					<input type="button" value="konversi" name="button1" onclick="test()">
+					<input type="Reset" value="Reset" name="reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

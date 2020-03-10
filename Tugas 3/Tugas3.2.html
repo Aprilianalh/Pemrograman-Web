@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kalkulator Sederhana</title>
+<script language="javascript">
+     function tambah(){ 
+      a=eval(document.form.a.value);
+      b=eval(document.form.b.value);
+      c=a+b;
+      document.form.c.value=c;
+       }
+</script> 
+<script language="javascript">
+       function kurang(){ 
+      a=(document.form.a.value);
+      b=(document.form.b.value);
+      c=a-b;
+      document.form.c.value=c;
+       }
+</script>
+<script language="javascript">
+       function kali(){ 
+      a=(document.form.a.value);
+      b=(document.form.b.value);
+      c=a*b;
+      document.form.c.value=c;
+       }
+</script>
+<script language="javascript">
+       function bagi(){ 
+      a=(document.form.a.value);
+      b=(document.form.b.value);
+      c=a/b;
+      document.form.c.value=c;
+       }
+</script>
+<script language="javascript">
+        function resetForm(){
+      document.form.reset();
+        }
+</script> 
+ </head>
+<body>
+     <form name="form" method="POST">
+      <table width="300" height="160 border="1" align="center" bordercolor="black" bgcolor="white">
+      <br>
+      <center> Kalkulator </center>
+      <br>
+             <tr>
+                 <td>Bil 1</td>
+                  <td>:</td>
+                  <td><input type="text" id="a" name="a"></td>
+             </tr>  
+              <tr>
+                 <td>Bil 2</td>
+                  <td>:</td>
+                  <td><input type="text" id="b" name="b"></td>
+             </tr> 
+              <tr>
+                 <td>Hasil</td>
+                  <td>:</td>
+                  <td><input type="text" id="c" name="c" disabled="true"></td>
+             </tr>
+             <tr>
+                  <td></td><td></td>
+                  <td>
+                  <input type="button" value="+" onclick="tambah()">
+                  <input type="button" value="-" onclick="kurang()">
+                  <input type="button" value="x" onclick="kali()">
+                  <input type="button" value="/" onclick="bagi()">
+                  <input type="button" value="reset" onclick="resetForm()">
+             </tr>
+          </table>
+    </form>
+</body>
+</html>
