@@ -1,0 +1,49 @@
+body {
+  width: 1700;
+  height: 5000;
+  margin: 30px auto;
+}
+main {
+  display: flex;
+}
+.header,
+.menu,
+.carousel-slide, .carousel-inner, .carousel-item, .carousel-control-prev, .carousel-control-next
+.konten,
+.info,
+.footer {
+  margin-bottom: 5px;
+  padding: 15px 0;
+}
+.header {
+  width: auto;
+  height: auto;
+  background: #CC0000;
+  text-align: center;
+}
+/
+.wrap .menu ul{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+ 
+.wrap .menu ul li{
+  float: left;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.konten {
+  width: 70%;
+  background: white; 
+}
+.info {
+  width: 30%;
+  background: #FFFFFF;
+}
+.footer {
+  width: 100%;
+  background: #CC0000;
+  text-align: center;
+}

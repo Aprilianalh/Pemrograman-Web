@@ -1,0 +1,56 @@
+body {
+  width: 1700;
+  height: 5000;
+  margin: 30px auto;
+}
+
+main {
+  display: flex;
+}
+
+.padding_this{
+padding: 15px;
+}
+
+.header,
+.menu,
+.konten,
+.info,
+.footer {
+  margin-bottom: 5px;
+  padding: 15px 0;
+}
+
+.header {
+  width: auto;
+  height: auto;
+  background: #cc0000;
+  text-align: center;
+}
+
+.wrap .menu ul{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+ 
+.wrap .menu ul li{
+  float: left;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.konten {
+  width: 70%;
+}
+
+.info {
+  width: 30%;
+  height: 50%;
+  background-color: 
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+}
