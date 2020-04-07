@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> BUKU TAMU </title>
+	<style type="text/css">
+		h1 {font-family: calibri; text-align: center; background-color: #FFCCCC;}
+		body {background-image: url('wall.jpg'); background-size: 115%;
+		background-repeat: no-repeat; padding-left: 550px; padding-right: 550px;}
+	</style>
+</head>
+	<h1> BUKU TAMU </h1>
+<body>
+<table width="500" align="center">
+			<form method="POST" action="simpan_kontak.php">
+			<tr>
+			</tr>
+			<br>
+			<tr>
+				<td> Nama </td>
+				<td> : </td>
+				<td>
+					<input name="nama" type="text" id="nama"/>
+				</td>
+			</tr>
+			<tr>
+				<td> Jenis Kelamin </td>
+				<td> : </td>
+				<td>
+					<input type="radio" name="jk" value="Perempuan"> Perempuan
+					<input type="radio" name="jk" value="Laki-Laki"> Laki-Laki
+				</td>
+			</tr>
+			<tr>
+				<td> Email </td>
+				<td> : </td>
+				<td>
+					<input name="email" type="text" id="email"/>
+				</td>
+			</tr>
+			<tr>
+				<td> Alamat </td>
+				<td> : </td>
+				<td>
+					<input name="alamat" type="text" id="alamat"/>
+				</td>
+			</tr>
+			<tr>
+				<td> Kota </td>
+				<td> : </td>
+				<td>
+					<select name="kota">
+						<option value="Surabaya"> Surabaya </option>
+						<option value="Jakarta"> Sidoarjo </option>
+						<option value="Bandung"> Malang </option>
+						<option value="Sidoarjo"> Gresik </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td> Pesan </td>
+				<td> : </td>
+				<td>
+					<textarea name ="pesan" cols="45" rows="5" align="center"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="SIMPAN"></td>
+			</tr>
+		</form>
+		</table>
+</body>
+</html>
