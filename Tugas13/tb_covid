@@ -1,0 +1,60 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 05, 2020 at 04:27 AM
+-- Server version: 10.1.29-MariaDB
+-- PHP Version: 7.2.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `db_cases`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_covid`
+--
+
+CREATE TABLE `tb_covid` (
+  `Country` varchar(50) NOT NULL,
+  `Total Cases` int(200) NOT NULL,
+  `New Cases` int(200) NOT NULL,
+  `Total Deaths` int(200) NOT NULL,
+  `New Deaths` int(200) NOT NULL,
+  `Total Recovered` int(200) NOT NULL,
+  `Active Cases` int(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_covid`
+--
+
+INSERT INTO `tb_covid` (`Country`, `Total Cases`, `New Cases`, `Total Deaths`, `New Deaths`, `Total Recovered`, `Active Cases`) VALUES
+('USA', 1029878, 19522, 58640, 1843, 140138, 831100),
+('Spain', 232128, 2706, 23822, 301, 123903, 84403),
+('Italy', 201505, 2091, 27359, 382, 68941, 105205),
+('France', 165911, 2638, 23660, 367, 46886, 95365),
+('UK', 161145, 3996, 21678, 586, 0, 139123),
+('Germany', 159431, 673, 6215, 89, 117400, 35816),
+('Turkey', 114653, 2392, 2992, 92, 38809, 72852),
+('Russia', 93558, 6411, 867, 73, 8456, 84235),
+('Iran', 92584, 1112, 5877, 71, 72439, 14268),
+('China', 82836, 6, 4633, 0, 77555, 648);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
